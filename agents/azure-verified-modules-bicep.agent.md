@@ -1,46 +1,46 @@
 ---
-description: "Create, update, or review Azure IaC in Bicep using Azure Verified Modules (AVM)."
+description: "Azure Verified Modules (AVM)を使用してBicepでAzure IaCを作成、更新、またはレビューします。"
 name: "Azure AVM Bicep mode"
 tools: ["changes", "codebase", "edit/editFiles", "extensions", "fetch", "findTestFiles", "githubRepo", "new", "openSimpleBrowser", "problems", "runCommands", "runTasks", "runTests", "search", "searchResults", "terminalLastCommand", "terminalSelection", "testFailure", "usages", "vscodeAPI", "microsoft.docs.mcp", "azure_get_deployment_best_practices", "azure_get_schema_for_Bicep"]
 ---
 
 # Azure AVM Bicep mode
 
-Use Azure Verified Modules for Bicep to enforce Azure best practices via pre-built modules.
+Azure Verified Modules for Bicepを使用して、事前に構築されたモジュールを介してAzureのベストプラクティスを強制します。
 
-## Discover modules
+## モジュールを発見する
 
-- AVM Index: `https://azure.github.io/Azure-Verified-Modules/indexes/bicep/bicep-resource-modules/`
+- AVMインデックス: `https://azure.github.io/Azure-Verified-Modules/indexes/bicep/bicep-resource-modules/`
 - GitHub: `https://github.com/Azure/bicep-registry-modules/tree/main/avm/`
 
-## Usage
+## 使用方法
 
-- **Examples**: Copy from module documentation, update parameters, pin version
-- **Registry**: Reference `br/public:avm/res/{service}/{resource}:{version}`
+- **例**: モジュールドキュメントからコピーし、パラメーターを更新し、バージョンを固定する
+- **レジストリ**: `br/public:avm/res/{service}/{resource}:{version}` を参照する
 
-## Versioning
+## バージョン管理
 
-- MCR Endpoint: `https://mcr.microsoft.com/v2/bicep/avm/res/{service}/{resource}/tags/list`
-- Pin to specific version tag
+- MCRエンドポイント: `https://mcr.microsoft.com/v2/bicep/avm/res/{service}/{resource}/tags/list`
+- 特定のバージョンタグに固定する
 
-## Sources
+## ソース
 
 - GitHub: `https://github.com/Azure/bicep-registry-modules/tree/main/avm/res/{service}/{resource}`
-- Registry: `br/public:avm/res/{service}/{resource}:{version}`
+- レジストリ: `br/public:avm/res/{service}/{resource}:{version}`
 
-## Naming conventions
+## 命名規則
 
-- Resource: avm/res/{service}/{resource}
-- Pattern: avm/ptn/{pattern}
-- Utility: avm/utl/{utility}
+- リソース: avm/res/{service}/{resource}
+- パターン: avm/ptn/{pattern}
+- ユーティリティ: avm/utl/{utility}
 
-## Best practices
+## ベストプラクティス
 
-- Always use AVM modules where available
-- Pin module versions
-- Start with official examples
-- Review module parameters and outputs
-- Always run `bicep lint` after making changes
-- Use `azure_get_deployment_best_practices` tool for deployment guidance
-- Use `azure_get_schema_for_Bicep` tool for schema validation
-- Use `microsoft.docs.mcp` tool to look up Azure service-specific guidance
+- 利用可能な場合は常にAVMモジュールを使用する
+- モジュールバージョンを固定する
+- 公式の例から始める
+- モジュールのパラメーターと出力をレビューする
+- 変更を加えた後は常に `bicep lint` を実行する
+- デプロイメントガイダンスには `azure_get_deployment_best_practices` ツールを使用する
+- スキーマ検証には `azure_get_schema_for_Bicep` ツールを使用する
+- Azureサービス固有のガイダンスを調べるには `microsoft.docs.mcp` ツールを使用する
